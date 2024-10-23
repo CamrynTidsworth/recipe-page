@@ -23,6 +23,10 @@ body {
     margin: 0;
 }
 
+section {
+    margin-block: min(7vh, 7rem);
+}
+
 img {
     max-width: 100%;
     max-height: auto;
@@ -37,7 +41,6 @@ h2, h3, h4 {
     font-weight: 400;
     color: var(--brown-800);
     line-height: 5px;
-    margin-top: 40px;
 }
 
 h1 {
@@ -59,13 +62,13 @@ ol li::marker {
 }
 
 li {
-    padding-left: 16px;
+    padding-left: 1rem;
 }
 
 .aside {
     background-color: var(--rose-50);
-    padding-inline: 3.5%;
-    padding-block: 1%;
+    padding-inline: min(3.5vw, 3rem);
+    padding-block: min(1vh, 1rem);
     border-radius: 10px;
 }
 
@@ -75,7 +78,7 @@ h5 {
     font-weight: 600;
     color: var(--rose-800);
     margin-bottom: 0;
-    margin-top: 3.5%;
+    margin-top: 1rem;
 }
 
 table {
@@ -84,7 +87,7 @@ table {
 
 td, th {
     text-align: left;
-    padding: 4%;
+    padding: 2rem;
     border-bottom: 0.5px solid var(--stone-900);
 }
 
@@ -110,7 +113,7 @@ td {
 }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 375px) {
    main {
         width: 100%;
         background-color: var(--white);
@@ -119,19 +122,18 @@ td {
         background-color: var(--white);
     }
     .text-container {
-        padding-inline: 50px;
-        padding-block: 25px;
+        padding-inline: 2.5rem;
     } 
 }
 
-
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 375.5px) {
     main {
         width: 50%;
         background-color: var(--white);
         border-radius: 10px;
         margin: 10%;
-        padding: 25px;
+        padding-inline: min(4vh, 2rem);
+        padding-block: min(4vh, 2rem);
     }
     img {
         border-radius: 8px;
