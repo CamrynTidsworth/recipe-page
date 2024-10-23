@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+
+body {
+    background-color: var(--stone-100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+    color: var(--stone-900);
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Young Serif", sans-serif;
+}
+
+h2, h3, h4 {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--brown-800);
+    line-height: 5px;
+    margin-top: 40px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+ul {
+    line-height: 40px;
+}
+
+p, ol {
+    line-height: 30px;
+}
+
+ol li::marker {
+    color: var(--brown-800);
+    font-weight: 700;
+}
+
+li {
+    padding-left: 16px;
+}
+
+.aside {
+    background-color: var(--rose-50);
+    padding-inline: 3.5%;
+    padding-block: 1%;
+    border-radius: 10px;
+}
+
+h5 {
+    font-family: "Outfit", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--rose-800);
+    margin-bottom: 0;
+    margin-top: 3.5%;
+}
+
+table {
+    width: 100%;
+}
+
+td, th {
+    text-align: left;
+    padding: 4%;
+    border-bottom: 0.5px solid var(--stone-900);
+}
+
+th {
+    font-weight: 400;
+}
+
+td {
+    font-weight: 700;
+    color: var(--brown-800);
+}
+
+/* ATTRIBUTION */
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin: 3%;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 599px) {
+   main {
+        width: 100%;
+        background-color: var(--white);
+    }
+    body {
+        background-color: var(--white);
+    }
+    .text-container {
+        padding-inline: 50px;
+        padding-block: 25px;
+    } 
+}
+
+
+@media only screen and (min-width: 600px) {
+    main {
+        width: 50%;
+        background-color: var(--white);
+        border-radius: 10px;
+        margin: 10%;
+        padding: 25px;
+    }
+    img {
+        border-radius: 8px;
+    }
+}
