@@ -83,12 +83,21 @@ h5 {
 
 table {
     width: 100%;
+    border-collapse: collapse;
 }
 
 td, th {
     text-align: left;
     padding: 2rem;
+    
+}
+
+tr {
     border-bottom: 0.5px solid var(--stone-900);
+}
+
+.last {
+    border-bottom: 0;
 }
 
 th {

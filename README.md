@@ -67,6 +67,18 @@ I practiced writing media queries and writing responsive code with this project.
 }
 ```
 
+I also formatted an HTML table for the first time with CSS. At first I struggled figuring out how to apply a border to table rows until I discovered that you have to collapse the border first (thanks Stack Overflow!):
+
+```css
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 0.5px solid var(--stone-900);
+}
+```
+
 ### Continued development
 
 I plan to continue focusing on responsive design. Especially focusing on using CSS well to minimize the use of unnecessary media queries, and understanding which units to use where for responsive design (you can see in this project my units are kind of all over the place).
